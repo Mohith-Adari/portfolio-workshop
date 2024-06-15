@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/projects.webp";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,28 +31,32 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Emoji game",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Created an exciting memory game with unique emoji clicks and randomized placement",
+    url: "https://mohithemoji.ccbp.tech/",
+    github : "https://github.com/Mohith-Adari/emoji-game-react.git",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Twitter Backend Management clone mini",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Worked on backend management using small part of duplicate twitter database",
+    url: "https://github.com/Mohith-Adari/twitterClone-nodejs.git",
+    github : "https://github.com/Mohith-Adari/twitterClone-nodejs.git",
   },
   {
-    title: "My Resume Site",
+    title: "IPL Dashboard",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Created a ipl dashboard for viewing the records of latest match and previous matches and their results. I Built the website completely using React",
+    url: "https://github.com/Mohith-Adari/ipl-dashboard-react.git",
+    github : "https://github.com/Mohith-Adari/ipl-dashboard-react.git",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Wikipedia Search",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Created a wikipedia search with a given json file using javascript",
+    url: "https://mohithwiki.ccbp.tech/",
+    github : "https://mohithwiki.ccbp.tech/",
   },
 ];
 
@@ -74,7 +78,10 @@ const Portfolio = () => {
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
+              
               <p className="small">{project.description}</p>
+
+              <a href={project.github} target= "_blank" rel="noopener noreferrer" style={{margin:"10px"}}>github repository</a>
             </div>
           ))}
         </div>
